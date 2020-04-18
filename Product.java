@@ -2,6 +2,8 @@ public class Product
 {
 	private String name;
 	private float price;
+	int id;
+
 	public Product()
 	{
 		setName("Coca Cola");
@@ -15,6 +17,10 @@ public class Product
 	{
 		return price;
 	}
+	public int getId()
+	{
+		return id;
+	}
 	public void setName(String name)
 	{
 		this.name = name;
@@ -22,6 +28,10 @@ public class Product
 	public void setPrice(float price)
 	{
 		this.price = price;
+	}
+	public void setId(int id)
+	{
+		this.id = id;
 	}
 }
 

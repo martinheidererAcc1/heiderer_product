@@ -9,15 +9,5 @@ public class Company
 	{
 		products = new LinkedList<Product>();
 		name = "IBM";
-	}
-
-	public String getName()
-	{
-		return name;
-	}
-
-	public void setName(String name)
-	{
-		this.name = name;
 	}	
 }

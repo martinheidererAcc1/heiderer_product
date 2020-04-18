@@ -1,11 +1,11 @@
-import java.util.ArrayList;
+import java.util.TreeSet;
 
 public class Company
 {
-	private ArrayList<Product> products;
+	private TreeSet<Product> products;
 	
 	public Company()
 	{
-		products = new ArrayList<Product>(100);
+		products = new TreeSet<Product>();
 	}
 }

@@ -1,25 +1,27 @@
 public class Product
 {
 	private String name;
+	private onStock boolean;
 	public Product()
 	{
-		name = "Coca Cola";
+		setName(Coca Cola);
+		setOnStock(true);
 	}
 	public String getName()
 	{
 		return name;
 	}
+	public boolean getOnStock()
+	{
+		return onstock;
+	}
 	public void setName(String name)
 	{
-		if(name != null)
-			this.name = name;
+		this.name = name;
 	}
-	public static void main(String[] args)
+	public void setOnStock(boolean onStock)
 	{
-		Product p1 = new Product();
-		System.out.println(p1.name);
-		p1.setName("Pepsi");
-		System.out.println(p1.getName());
+		this.onStock = onStock;
 	}
 }
 

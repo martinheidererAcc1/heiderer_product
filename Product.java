@@ -1,25 +1,27 @@
 public class Product
 {
 	private String name;
+	private float price;
 	public Product()
 	{
-		name = "Coca Cola";
+		setName("Coca Cola");
+		setPrice(10);
 	}
 	public String getName()
 	{
 		return name;
 	}
+	public float getPrice()
+	{
+		return price;
+	}
 	public void setName(String name)
 	{
-		if(name != null)
-			this.name = name;
+		this.name = name;
 	}
-	public static void main(String[] args)
+	public void setPrice(float price)
 	{
-		Product p1 = new Product();
-		System.out.println(p1.name);
-		p1.setName("Pepsi");
-		System.out.println(p1.getName());
+		this.price = price;
 	}
 }
 
